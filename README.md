@@ -11,8 +11,14 @@
 <p class="has-line-data" data-line-start="3" data-line-end="4">Install Docker Desktop – the fastest way to containerize applications.</p>
 <h3 class="code-line" data-line-start=4 data-line-end=5 ><a id="Download_Git__optional_4"></a>Download Git – optional</h3>
 <h3 class="code-line" data-line-start=5 data-line-end=6 ><a id="INSTALLATION_DOCKER_5"></a>INSTALLATION DOCKER</h3>
-<pre><code> ```sh
- docker exec -it -e MYSQL_PWD=password &lt;container-name&gt;  mysql -uroot.
+
+<ul>
+<li class="has-line-data" data-line-start="17" data-line-end="28">RUNNING APP AND MIGRATION<pre><code class="has-line-data" data-line-start="19" data-line-end="28" class="language-sh">- <span class="hljs-built_in">cd</span> bus-ticket-app &amp;&amp; ./vendor/bin/sail up
+    - ./vendor/bin/sail up
+    - This <span class="hljs-built_in">command</span> will start the containers needed <span class="hljs-keyword">for</span> Laravel Sail.
+- ./vendor/bin/sail shell
+    - This <span class="hljs-built_in">command</span> will start a shell inside the workspace container.
+- docker exec -it -e MYSQL_PWD=password &lt;container-name&gt;  mysql -uroot.
 CREATE DATABASE mydatabase;
 - This will create a new database with the specified name.
 SHOW DATABASES;
@@ -21,17 +27,14 @@ USE mydatabases;
 - this will select the specified database
 SHOW TABLES;
 - this will show all yoyr table inside mydatabase
-</code></pre>
-<ul>
-<li class="has-line-data" data-line-start="17" data-line-end="28">RUNNING APP AND MIGRATION<pre><code class="has-line-data" data-line-start="19" data-line-end="28" class="language-sh">- <span class="hljs-built_in">cd</span> bus-ticket-app &amp;&amp; ./vendor/bin/sail up
-    - ./vendor/bin/sail up
-    - This <span class="hljs-built_in">command</span> will start the containers needed <span class="hljs-keyword">for</span> Laravel Sail.
-- ./vendor/bin/sail shell
-    - This <span class="hljs-built_in">command</span> will start a shell inside the workspace container.
 - php artisan make:migration create_table_name
     - Replace table_name with the name you want to give your new table.
 - open database/migration file and edit file to edit table schema
 - php artisan migrate
+<pre><code> 
+ 
+</code></pre>
+
 </code></pre>
 </li>
 </ul>
