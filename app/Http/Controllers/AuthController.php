@@ -88,4 +88,9 @@ class AuthController extends Controller
             'message' => 'Logged out'
         ];
     }
+
+    public function authenticated()
+    {
+        return response()->json(['error' => 'Unauthorized'], 401);
+    }
 }

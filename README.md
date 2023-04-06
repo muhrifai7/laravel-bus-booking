@@ -18,23 +18,10 @@
     - This <span class="hljs-built_in">command</span> will start the containers needed <span class="hljs-keyword">for</span> Laravel Sail.
 - ./vendor/bin/sail shell
     - This <span class="hljs-built_in">command</span> will start a shell inside the workspace container.
-- docker exec -it -e MYSQL_PWD=password &lt;container-name&gt;  mysql -uroot.
-CREATE DATABASE mydatabase;
-- This will create a new database with the specified name.
-SHOW DATABASES;
-- The output should include the database you just created.
-USE mydatabases;
-- this will select the specified database
-SHOW TABLES;
-- this will show all yoyr table inside mydatabase
 - php artisan make:migration create_table_name
     - Replace table_name with the name you want to give your new table.
 - open database/migration file and edit file to edit table schema
 - php artisan migrate
-<pre><code> 
- 
-</code></pre>
-
 </code></pre>
 </li>
 </ul>
